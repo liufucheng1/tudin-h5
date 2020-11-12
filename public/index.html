@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="https://store.cdn.xu5g.com/favicon.png">
+    <meta name="description" content="兔盯守护是兔盯智慧安全系统在C端消费市场的智慧安全解决方案，形成应用“H5+智能终端”的安全守护模式，可广泛应用于儿童安全守护、老人安全守护、宠物防丢失、物品防丢失等场景。">
+    <meta name="keywords" content="兔盯儿,兔盯守护,老人安全,智慧安全,智慧安全解决方案,智慧城市">
+    <link href="//at.alicdn.com/t/font_1380892_c3e5fzt2ndo.css" rel="stylesheet">
+    <!-- 使用CDN的CSS文件 -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+    <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
+    <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
+    <% } %>
+    <!-- 使用CDN的JS文件 -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+    <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %>
+    <title>兔盯守护</title>
+  </head>
+  <body>
+    <noscript>
+      <p>对不起，您的浏览器暂不支持JavaScript，请先升级您的浏览器</p>
+    </noscript>
+    <div id="app"></div>
+  </body>
+</html>
